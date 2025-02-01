@@ -56,23 +56,26 @@ export default function Menu() {
           ))}
         </div>
 
-        <div className="menu-image-container relative h-[400px] w-[350px] rounded-lg overflow-hidden animate-zoomIn">
-          <Image
-            src="/menu.png"
-            alt="Coffee and pastries"
-            layout="fill"
-            objectFit="cover"
-            className="menu-image"
-          />
-        </div>
-        <div className="menu2-image-container relative h-[400px] w-[350px] rounded-lg overflow-hidden animate-zoomIn">
-          <Image
-            src="/menu2.png"
-            alt="Coffee"
-            layout="fill"
-            objectFit="cover"
-            className="menu2-image"
-          />
+        {/* Images Section - Stack Vertically */}
+        <div className="menu-images flex flex-col gap-6 md:w-full">
+          <div className="menu-image-container relative w-full h-[400px] rounded-lg overflow-hidden animate-zoomIn">
+            <Image
+              src="/menu.png"
+              alt="Coffee and pastries"
+              layout="fill"
+              objectFit="cover"
+              className="menu-image"
+            />
+          </div>
+          <div className="menu2-image-container relative w-full h-[400px] rounded-lg overflow-hidden animate-zoomIn">
+            <Image
+              src="/menu2.png"
+              alt="Coffee"
+              layout="fill"
+              objectFit="cover"
+              className="menu2-image"
+            />
+          </div>
         </div>
       </div>
     </div>
